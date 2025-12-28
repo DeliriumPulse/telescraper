@@ -1,0 +1,22 @@
+# Sensitive Data
+.env
+*.session
+*.session-journal
+
+# Compiled / Build
+__pycache__/
+*.pyc
+build/
+dist/
+*.spec
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Virtual Env
+venv/
+env/

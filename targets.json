@@ -1,0 +1,27 @@
+{
+    "sources": {
+        "-1002239054205": {
+            "name": "BSC Deploys",
+            "type": "group",
+            "monitor_all": true,
+            "user_ids": []
+        },
+        "-4583093202": {
+            "name": "Command Channel",
+            "type": "group",
+            "monitor_all": false,
+            "user_ids": [
+                6965520064
+            ]
+        },
+        "-1002755965831": {
+            "name": "VETTR Premium Hub",
+            "type": "group",
+            "monitor_all": false,
+            "user_ids": []
+        }
+    },
+    "destination_ids": [
+        "me"
+    ]
+}
