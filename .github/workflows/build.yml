@@ -26,11 +26,7 @@ jobs:
       run: |
         pyinstaller --noconfirm --onefile --windowed --name "TelegramForwarder" --clean --add-data "README_CLIENT.txt;." --add-data "DOCUMENTATION.md;." main.py
         
-    - name: Upload Windows Artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: TelegramForwarder-Windows
-        path: dist/TelegramForwarder.exe
+
 
   build-macos:
     runs-on: macos-latest
