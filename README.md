@@ -23,13 +23,13 @@ A powerful, user-friendly tool to scrape and forward messages from multiple Tele
 
 ### Windows (GUI)
 1.  Download the latest release from the [Releases](https://github.com/DeliriumPulse/telescraper/releases) page (or build from source).
-2.  Run `TelegramForwarder.exe`.
+2.  Run `Telescraper.exe`.
 3.  Login with your API ID and Hash.
 
 ### macOS (GUI)
 1.  Go to the **Actions** tab in this repository.
 2.  Click on the latest successful build.
-3.  Download the `TelegramForwarder-Mac` artifact.
+3.  Download the `Telescraper-Mac` artifact.
 4.  Unzip and run the `.app`.
 
 ### Running from Source (Linux/Mac/Windows)
