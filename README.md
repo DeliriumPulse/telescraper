@@ -2,7 +2,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
-![Build Status](https://img.shields.io/github/actions/workflow/status/DeliriumPulse/telescraper/build.yml)
+![Build Status](https://github.com/DeliriumPulse/telescraper/actions/workflows/build.yml/badge.svg)
 
 A powerful, user-friendly tool to scrape and forward messages from multiple Telegram groups and channels to your own destinations.
 
