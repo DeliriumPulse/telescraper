@@ -54,6 +54,34 @@ python headless.py
 ```
 Type `.help` in the console for a list of commands.
 
+## Telegram Commands (Headless Mode)
+
+When running in VPS/Headless mode, you control the bot entirely via Telegram messages (Saved Messages).
+
+### General
+*   `.menu` / `.status`: Show the main dashboard with active sources and status.
+*   `.start`: Start monitoring all configured sources.
+*   `.stop`: Stop monitoring.
+
+### Source Management
+*   `.list [page]`: List all available groups and channels you can monitor.
+*   `.search <text>`: Search for a specific group or channel by name.
+*   `.add <id>`: Add a source to the monitoring list.
+*   `.remove <id>`: Remove a source from monitoring.
+*   `.edit <id>`: Select a source to modify its settings.
+
+### Configuration (While Editing a Source)
+*   `.mode`: Toggle between **Monitor All Messages** and **Monitor Specific Members**.
+*   `.members [page]`: List members in the group (for selecting specific people).
+*   `.select <id>`: Monitor this user's messages.
+*   `.unselect <id>`: Stop monitoring this user.
+*   `.done`: Save changes and exit edit mode.
+
+### Destination Management
+*   `.dest`: List current destination channels.
+*   `.dest add <id>`: Add a destination (Channel ID or 'me' for Saved Messages).
+*   `.dest del <id>`: Remove a destination.
+
 ## Configuration
 
 The application uses two main files for configuration:
