@@ -29,7 +29,7 @@ jobs:
         
     - name: Build EXE
       run: |
-        pyinstaller --noconfirm --onefile --windowed --name "TelegramForwarder" --clean --add-data "README_CLIENT.txt;." --add-data "DOCUMENTATION.md;." main.py
+        pyinstaller --noconfirm Telescraper.spec
         
     - name: Upload Windows Artifact
       uses: actions/upload-artifact@v4
