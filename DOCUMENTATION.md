@@ -1,7 +1,7 @@
-# Telegram Forwarder Project Documentation
+# Telescraper Project Documentation
 
 ## Overview
-The **Telegram Forwarder** is a sophisticated tool designed to automate the process of monitoring Telegram groups and channels and forwarding (scraping) their messages to specified destinations. It supports both a Graphical User Interface (GUI) for desktop use and a Headless mode for server/VPS deployment.
+**Telescraper** is a sophisticated tool designed to automate the process of monitoring Telegram groups and channels and forwarding (scraping) their messages to specified destinations. It supports both a Graphical User Interface (GUI) for desktop use and a Headless mode for server/VPS deployment.
 
 ## Key Features
 *   **Scrape Technology**: Instead of using the native "Forward" feature, the bot copies the message content (text, media, captions) and sends it as a new message.

@@ -1,5 +1,5 @@
 """
-Telegram Forwarder
+Telescraper
 Developed by Zack Whitson
 Telegram: @definitezer0
 X (Twitter): @Delirium_Pulse
@@ -28,7 +28,7 @@ def load_json(filename):
         return None
 
 async def main():
-    print("Starting Headless Telegram Forwarder...")
+    print("Starting Headless Telescraper...")
 
     # Load Config
     config = load_json(CONFIG_FILE)

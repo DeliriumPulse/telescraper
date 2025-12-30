@@ -1,7 +1,7 @@
-Telegram Forwarder VPS (Headless)
+Telescraper VPS (Headless)
 =================================
 
-A lightweight, command-line version of the Telegram Forwarder designed for running on servers (VPS) or in the background.
+A lightweight, command-line version of Telescraper designed for running on servers (VPS) or in the background.
 
 Features
 --------

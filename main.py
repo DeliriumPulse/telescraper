@@ -1,5 +1,5 @@
 """
-Telegram Forwarder
+Telescraper
 Developed by Zack Whitson
 Telegram: @definitezer0
 X (Twitter): @Delirium_Pulse

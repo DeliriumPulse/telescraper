@@ -1,5 +1,5 @@
 """
-Telegram Forwarder
+Telescraper
 Developed by Zack Whitson
 Telegram: @definitezer0
 X (Twitter): @Delirium_Pulse
@@ -22,7 +22,7 @@ class MainWindow(QWidget):
     def __init__(self, client_manager: ClientManager):
         super().__init__()
         self.client_manager = client_manager
-        self.setWindowTitle("Telegram Forwarder")
+        self.setWindowTitle("Telescraper")
         self.resize(600, 700)
         
         self.init_ui()

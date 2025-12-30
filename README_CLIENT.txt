@@ -1,4 +1,4 @@
-Telegram Forwarder Client (GUI)
+Telescraper Client (GUI)
 ===============================
 
 A powerful, user-friendly tool to scrape and forward messages from multiple Telegram groups and channels to your own destinations.
