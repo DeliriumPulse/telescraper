@@ -23,12 +23,17 @@ jobs:
         pip install pyinstaller
         
     - name: Build EXE
-name: Build Telegram Forwarder
+name: Build Telescraper
 
 on:
   push:
     branches: [ "main", "master" ]
+    tags:
+      - 'v*'
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build-windows:
@@ -57,6 +62,14 @@ jobs:
         name: Telescraper-Windows
         path: dist/TelegramForwarder.exe
 
+    - name: Release Windows
+      if: startsWith(github.ref, 'refs/tags/')
+      uses: softprops/action-gh-release@v1
+      with:
+        files: dist/TelegramForwarder.exe
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   build-macos:
     runs-on: macos-latest
     steps:
@@ -71,20 +84,34 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        pip install pyinstaller
+        pip install py2app
         
     - name: Build App
       run: |
-        pyinstaller --noconfirm --onefile --windowed --name "TelegramForwarder" --clean --add-data "README_CLIENT.txt:." --add-data "DOCUMENTATION.md:." main.py
+        # Create setup.py for py2app
+        echo "from setuptools import setup" > setup.py
+        echo "APP = ['main.py']" >> setup.py
+        echo "DATA_FILES = []" >> setup.py
+        echo "OPTIONS = {'argv_emulation': True, 'packages': ['telethon', 'PyQt6', 'qasync', 'dotenv']}" >> setup.py
+        echo "setup(app=APP, data_files=DATA_FILES, options={'py2app': OPTIONS}, setup_requires=['py2app'])" >> setup.py
         
-    - name: Create DMG (Optional but recommended)
+        python setup.py py2app
+        
+    - name: Create Zip
       run: |
-        # Simple zip for now as creating a proper DMG is complex without extra tools
         cd dist
-        zip -r TelegramForwarder-Mac.zip TelegramForwarder.app
+        zip -r Telescraper-Mac.zip main.app
         
     - name: Upload Mac Artifact
       uses: actions/upload-artifact@v4
       with:
         name: Telescraper-Mac
-        path: dist/TelegramForwarder-Mac.zip
+        path: dist/Telescraper-Mac.zip
+
+    - name: Release Mac
+      if: startsWith(github.ref, 'refs/tags/')
+      uses: softprops/action-gh-release@v1
+      with:
+        files: dist/Telescraper-Mac.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
