@@ -54,6 +54,43 @@ python headless.py
 ```
 Type `.help` in the console for a list of commands.
 
+## Configuration
+
+The application uses two main files for configuration:
+1.  **`.env`**: Stores your sensitive API credentials (API ID, Hash, Phone). This is created automatically on first login.
+2.  **`targets.json`**: Stores your monitoring rules (Source Channels -> Destination Channels).
+
+**Example `targets.json`**:
+```json
+{
+    "sources": {
+        "123456789": {
+            "name": "Crypto Signals",
+            "type": "channel",
+            "monitor_all": true,
+            "user_ids": []
+        }
+    },
+    "destination_ids": ["987654321", "me"]
+}
+```
+
+## Troubleshooting
+
+*   **"Session Revoked"**: If you log out from another device, delete the `session_*.session` file and login again.
+*   **Messages Not Arriving**:
+    *   Check if the bot has permission to send messages in the Destination channel.
+    *   Verify "Monitor All" is checked or the correct members are selected.
+*   **Login Code Not Sending**: Check your Telegram app on your phone; the code is sent via Telegram, not SMS.
+
+## Disclaimer
+
+This tool is for educational and personal use only. The developers are not responsible for any misuse of this software or any bans resulting from excessive use. Please respect Telegram's Terms of Service and API usage limits.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
 ## Credits
 
 **Developed by Zack Whitson**
