@@ -46,7 +46,6 @@ The **Telegram Forwarder** is a sophisticated tool designed to automate the proc
     *   Command-line interface for servers.
     *   Runs an interactive loop accepting commands like `.add`, `.list`, `.start`.
     *   Designed to be lightweight and robust for 24/7 operation.
-
 ## Setup & Deployment
 
 ### Desktop (GUI)
@@ -88,3 +87,11 @@ To ensure the longevity of your Telegram account:
 *   **Messages Not Arriving**:
     *   Check if the bot has permission to send messages in the Destination channel.
     *   Verify "Monitor All" is checked or the correct members are selected.
+
+## Credits
+Developed by **Zack Whitson**.
+
+*   **Telegram**: [@definitezer0](https://t.me/definitezer0)
+*   **X (Twitter)**: [Delirium_Pulse](https://x.com/Delirium_Pulse)
+*   **Website**: [www.zackwhitson.com](http://www.zackwhitson.com)
+*   **Upwork**: [Hire Me](https://www.upwork.com/freelancers/~01b74427823660e746)

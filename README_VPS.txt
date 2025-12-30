@@ -66,3 +66,12 @@ To keep the bot running after you disconnect:
     ```bash
     screen -r telegram_bot
     ```
+
+Credits
+-------
+Developed by Zack Whitson.
+
+*   **Telegram**: [@definitezer0](https://t.me/definitezer0)
+*   **X (Twitter)**: [Delirium_Pulse](https://x.com/Delirium_Pulse)
+*   **Website**: [www.zackwhitson.com](http://www.zackwhitson.com)
+*   **Upwork**: [Hire Me](https://www.upwork.com/freelancers/~01b74427823660e746)

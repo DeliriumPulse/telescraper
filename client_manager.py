@@ -1,3 +1,11 @@
+"""
+Telegram Forwarder
+Developed by Zack Whitson
+Telegram: @definitezer0
+X (Twitter): @Delirium_Pulse
+Website: www.zackwhitson.com
+Upwork: https://www.upwork.com/freelancers/~01b74427823660e746
+"""
 import asyncio
 import json
 import os

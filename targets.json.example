@@ -1,0 +1,11 @@
+{
+    "sources": {
+        "123456789": {
+            "name": "Example Channel",
+            "type": "channel",
+            "monitor_all": true,
+            "user_ids": []
+        }
+    },
+    "destination_ids": ["987654321", "me"]
+}

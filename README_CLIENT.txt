@@ -65,3 +65,12 @@ Files
 *   `.env`: Stores your API credentials (created after first login).
 *   `targets.json`: Stores your monitoring configurations.
 *   `session_*.session`: Your login session file. DO NOT SHARE THIS.
+
+Credits
+-------
+Developed by Zack Whitson.
+
+*   **Telegram**: [@definitezer0](https://t.me/definitezer0)
+*   **X (Twitter)**: [Delirium_Pulse](https://x.com/Delirium_Pulse)
+*   **Website**: [www.zackwhitson.com](http://www.zackwhitson.com)
+*   **Upwork**: [Hire Me](https://www.upwork.com/freelancers/~01b74427823660e746)

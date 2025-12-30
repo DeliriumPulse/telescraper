@@ -20,3 +20,11 @@ dist/
 # Virtual Env
 venv/
 env/
+
+# Config & Data
+config.json
+targets.json
+*.zip
+TelegramForwarder.exe
+TelegramForwarder.app/
+TelegramForwarder_Package/
