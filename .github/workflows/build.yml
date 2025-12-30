@@ -35,13 +35,13 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: Telescraper-Windows
-        path: dist/TelegramForwarder.exe
+        path: dist/Telescraper.exe
 
     - name: Release Windows
       if: startsWith(github.ref, 'refs/tags/')
       uses: softprops/action-gh-release@v1
       with:
-        files: dist/TelegramForwarder.exe
+        files: dist/Telescraper.exe
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
